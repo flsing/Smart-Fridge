@@ -6,6 +6,8 @@ Term project to be completed by myself and Patrick Langis. It is still a work in
  
  We used Flask and Python in order to connect to our database that was created in Postgresql.  
 
-'''
+In order to set up the environment you need to do the following command. 
+
+```
 pip install -r requirements.txt
-'''
+```
