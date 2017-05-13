@@ -1,11 +1,11 @@
-import psycopg2
-from flask import Flask, request, redirect, url_for, render_template
+# import psycopg2
+from flask import Flask, request, render_template
+# from flask import redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
-from models import Ingredient, Admin, Chef, RegularUser
-from views import *
+# from models import Ingredient, Admin, Chef, RegularUser
 
-conn = psycopg2.connect(database="fsing047", user="fsing047", password="Lallouz24",host="web0.site.uottawa.ca", port="15432")
-cursor = conn.cursor()
+# conn = psycopg2.connect(database="fsing047", user="fsing047", password="Lallouz24",host="web0.site.uottawa.ca", port="15432")
+# cursor = conn.cursor()
 
 
 app = Flask(__name__)
@@ -14,9 +14,9 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://fsing047:Lallouz24@web0.si
 db = SQLAlchemy(app)
 
 
-# @app.route('/')
-# def index():
-#     return render_template('userAddIngredients.html')
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 
 # @app.route('/post_ingredient')# methods=['POST'])
