@@ -20,3 +20,15 @@ In order to set up the environment you need to do the following command once you
 pip install -r requirements.txt
 ```
 
+Next, run app.py 
+
+
+```
+python app.py
+```
+
+You should now be good to go!
+
+Enjoy
+
+- Felix 
