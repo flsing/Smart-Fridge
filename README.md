@@ -1,6 +1,6 @@
 # Smart Fridge 
 
-<hr>___</hr>
+
 
 ## Information 
 
@@ -10,7 +10,7 @@ Term project completed by myself and Patrick Langis. It is still a work in progr
  
  We used Flask and Python for the back-end and in order to connect to our database that was created in Postgresql. 
 
-<hr>___</hr>
+
 
 ## Installation 
 
