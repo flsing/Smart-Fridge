@@ -10,7 +10,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://fsing047:Lallouz24@web0.site.uottawa.ca:15432/fsing047'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://fsing047:*******@web0.site.uottawa.ca:15432/fsing047'
 db = SQLAlchemy(app)
 
 print(app)
@@ -60,7 +60,7 @@ def show_entries():
 def add_entry():
     if not session.get('logged_in'):
         abort(401)
-    
+
     app.execute('insert into entries (title, text) values (?, ?)',
                  [request.form['title'], request.form['text']])
     db.commit()
